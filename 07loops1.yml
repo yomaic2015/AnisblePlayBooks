@@ -7,9 +7,5 @@
     - name: Install list of packages
       yum: name='{{item}}' state=present
       with_items:
-       - httpd
-       - wget
-       - vim
-       - zip
-       - unzip  
+         name: ['git',  'vim',  'zip',  'unzip',  'tree']
 ...
